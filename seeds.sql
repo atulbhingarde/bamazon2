@@ -1,31 +1,35 @@
 
-DROP DATABASE IF EXISTS bamazon; --drop the db if it exists
--- Create the database
+DROP DATABASE IF EXISTS bamazon; -- drop the db if it exists
+-- Create a database called bamazon --
 CREATE DATABASE bamazon;
 
-USE bamazon; -- use this db for subsequent use (make this primary/active)I like how you 
+USE bamazon;
 
--- redo for mass update --can be compressed so only one set of commands and a list of payloads to follow and loop over
+CREATE TABLE products(
+  -- Creates a numeric column called "item_id" which will automatically increment its default value as we create new rows. --
+  id INTEGER auto_increment primary key , 
+  item_id integer , -- INTEGER AUTO_INCREMENT, -- primary key, -- item id unique and 
+  product_name VARCHAR(20),
+  department_name varchar(20),
+  stock_quantity INTEGER,
+  price decimal(10,2),
+  createdAt datetime default now(),
+  updatedAt datetime default now()
+  );
+INSERT INTO products(item_id,product_name,department_name,price,stock_quantity) VALUES (11,'Chisel','HandTool',1.50,22);
+INSERT INTO products(item_id,product_name,department_name,price,stock_quantity) VALUES (12,'Hammer','HandTool',2.00,14);
+INSERT INTO products(item_id,product_name,department_name,price,stock_quantity) VALUES (13,'ScrewDriver','HandTool',2.15,6);
 
--- seed data to insert into products table -- 4 departments, 3 products in each of various cost per unit (unit undeclared)
--- deliver ID, name, department, price, and initial on hand stock
-INSERT INTO products(item_id,product_name,department_name,price,stock_quantity) VALUES (11,'Apple','Produce',1.50,22);
-INSERT INTO products(item_id,product_name,department_name,price,stock_quantity) VALUES (12,'Orange','Produce',2.00,14);
-INSERT INTO products(item_id,product_name,department_name,price,stock_quantity) VALUES (13,'Lettuce','Produce',2.15,6);
+INSERT INTO products(item_id,product_name,department_name,price,stock_quantity) VALUES (14,'Putty','Paint',5.22,10);
+INSERT INTO products(item_id,product_name,department_name,price,stock_quantity) VALUES (15,'Brush','Paint',4.00,14);
+INSERT INTO products(item_id,product_name,department_name,price,stock_quantity) VALUES (16,'PaintRoller','Paint',9.75,15);
 
-INSERT INTO products(item_id,product_name,department_name,price,stock_quantity) VALUES (14,'Beef','Meat',5.22,10);
-INSERT INTO products(item_id,product_name,department_name,price,stock_quantity) VALUES (15,'Chicken','Meat',4.00,14);
-INSERT INTO products(item_id,product_name,department_name,price,stock_quantity) VALUES (16,'Shrimp','Meat',9.75,15);
+INSERT INTO products(item_id,product_name,department_name,price,stock_quantity) VALUES (17,'WoodenBar','Lumber',3.09,34);
+INSERT INTO products(item_id,product_name,department_name,price,stock_quantity) VALUES (18,'PlyWoow','Lumber',3.80,9);
+INSERT INTO products(item_id,product_name,department_name,price,stock_quantity) VALUES (19,'TwoByFour','Lumber',0.75,24);
 
-INSERT INTO products(item_id,product_name,department_name,price,stock_quantity) VALUES (17,'Milk','Dairy',3.09,34);
-INSERT INTO products(item_id,product_name,department_name,price,stock_quantity) VALUES (18,'Cheese','Dairy',3.80,9);
-INSERT INTO products(item_id,product_name,department_name,price,stock_quantity) VALUES (19,'Yogurt','Dairy',0.75,24);
-
-INSERT INTO products(item_id,product_name,department_name,price,stock_quantity) VALUES (20,'Bagle','Bakery',0.25,28);
-INSERT INTO products(item_id,product_name,department_name,price,stock_quantity) VALUES (21,'Bread','Bakery',2.00,30);
-INSERT INTO products(item_id,product_name,department_name,price,stock_quantity) VALUES (22,'Cupcake','Bakery',0.20,18);
-
-
-
+INSERT INTO products(item_id,product_name,department_name,price,stock_quantity) VALUES (20,'TwoWaySwitch','Electric',0.25,28);
+INSERT INTO products(item_id,product_name,department_name,price,stock_quantity) VALUES (21,'Switch','Electric',2.00,30);
+INSERT INTO products(item_id,product_name,department_name,price,stock_quantity) VALUES (22,'InsulationTape','Electric',0.20,18);
 
 
