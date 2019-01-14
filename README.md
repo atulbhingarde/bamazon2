@@ -6,8 +6,8 @@ you may want to run following command *_ALTER USER 'root'@'localhost' IDENTIFIED
 
 ![Alt text](/screenshots/inventory.png?raw=true "list inventory")
 
-![Alt text](/screenshots/orderPlacedpng?raw=true "order placed")
+![Alt text](/screenshots/order_placed.png?raw=true "order placed")
 
-![Alt text](/screenshots/stock_updated.png?raw=true "stock updated ")
+![Alt text](/screenshots/stock_updated_after_order.png?raw=true "stock updated after valid order")
 
 ![Alt text](/screenshots/cant_process_order.png?raw=true "cant process due to lack of sufficient stock")
