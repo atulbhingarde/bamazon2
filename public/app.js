@@ -1,3 +1,4 @@
+MyDebug = false; 
 let onHand;
 
 // retreive the inventory and render it to the screen in #inStock html class
@@ -13,6 +14,7 @@ console.log(onHand);
 
         data: dbStock,    
           columns: [
+              { data: "id" },
               { data: "item_id" },
               { data: "product_name" },
               { data: "price" },
@@ -40,7 +42,7 @@ const placeOrder = function(event)
   qty = document.getElementById("Quantity").value;
   console.log(item);
   console.log(qty);
-  alert('This is item ' + item + " " + qty ) ; 
+  MyDebug && alert('This is item ' + item + " " + qty ) ; 
 
   // Save the shopper input in an object called 'order'
   order.push( {
@@ -61,7 +63,7 @@ const placeOrder = function(event)
     // update db to update the order quantity
     newQtyStock = parseInt(onHand[orderProduct].stock_quantity - orderQuantity);
     console.log(" new stock shoud be " + newQtyStock);
-    alert('/api/stock/'+`${orderProduct}`);
+    MyDebug && alert('/api/stock/'+`${orderProduct}`);
     
     $.ajax(
     {  
