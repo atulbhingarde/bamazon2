@@ -7,7 +7,7 @@ USE bamazon;
 
 CREATE TABLE products(
   -- Creates a numeric column called "item_id" which will automatically increment its default value as we create new rows. --
-  id INTEGER auto_increment primary key , 
+  id INTEGER auto_increment primary key, 
   item_id integer , -- INTEGER AUTO_INCREMENT, -- primary key, -- item id unique and 
   product_name VARCHAR(20),
   department_name varchar(20),
