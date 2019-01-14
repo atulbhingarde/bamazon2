@@ -21,9 +21,9 @@ INSERT INTO products(item_id,product_name,department_name,price,stock_quantity) 
 INSERT INTO products(item_id,product_name,department_name,price,stock_quantity) VALUES (18,'Cheese','Dairy',3.80,9);
 INSERT INTO products(item_id,product_name,department_name,price,stock_quantity) VALUES (19,'Yogurt','Dairy',0.75,24);
 
-INSERT INTO products(item_id,product_name,department_name,price,stock_quantity) VALUES (110,'Bagle','Bakery',0.25,28);
-INSERT INTO products(item_id,product_name,department_name,price,stock_quantity) VALUES (111,'Bread','Bakery',2.00,30);
-INSERT INTO products(item_id,product_name,department_name,price,stock_quantity) VALUES (112,'Cupcake','Bakery',0.20,18);
+INSERT INTO products(item_id,product_name,department_name,price,stock_quantity) VALUES (20,'Bagle','Bakery',0.25,28);
+INSERT INTO products(item_id,product_name,department_name,price,stock_quantity) VALUES (21,'Bread','Bakery',2.00,30);
+INSERT INTO products(item_id,product_name,department_name,price,stock_quantity) VALUES (22,'Cupcake','Bakery',0.20,18);
 
 
 
