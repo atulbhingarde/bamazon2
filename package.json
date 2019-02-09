@@ -1,15 +1,18 @@
 {
-  "name": "00-homework",
+  "name": "test-assignment-from-bamazon",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "export NODE_ENV=test",
+    "windowstest": "env NODE_ENV=development mocha --exit",
+    "nyc-test": "env NODE_ENV=development nyc --reporter=text mocha --exit"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chai-http": "^4.2.1",
     "console.table": "^0.10.0",
     "dotenv": "^6.2.0",
     "express": "^4.16.4",
@@ -20,7 +23,11 @@
     "path": "^0.12.7",
     "sequelize": "^4.42.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "nyc": "^13.2.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/atulbhingarde/bamazon2.git"

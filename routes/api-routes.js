@@ -25,30 +25,49 @@ module.exports = function (app)
     });
    });
 
+  // app.get('/api/stock/:id', function (req, res) 
+  //  {
+
+  //   // Here we add an 'include' property to our options in our findAll query
+  //   // We set the value to an array of the models we want to include in a left outer join
+  //   // In this case, just db.Article
+  //   db.products.findOne({where: {id: '2'}})({
+  //     }).then(function(dbStock) {
+
+  //   // Here we add an 'include' property to our options in our findAll query
+  //   // We set the value to an array of the models we want to include in a left outer join
+  //   // In this case, just db.Article
+  //     res.json(dbStock);
+
+  //   }).catch(function (error) {
+  //     res.json({ error: error });
+  //   });
+  //  });
+  
 
   // PUT route for updating the quantity
-  app.put('/api/quantity/:id', function(req, res) 
-   {
-    console.log(req.body);
-    console.log(req.params.id);
-    db.products.update
-     (
-      { stock_quantity: req.body.stock_quantity },
-        { where: { id: req.params.id  } }
-     ).then
-     (
-      function(qtyUpdate) 
-       {   
-          console.log('Hello there' , qtyUpdate);
-          res.json(qtyUpdate);
-       }
-     ).catch
-    (
-     function(error) 
-      { 
-        console.log('error side', error); 
-        res.json({ error: error });
-      }
-    );
-   });
+  // app.put('/api/quantity/:id', function(req, res) 
+  //  {
+  //   // console.log(req.body);
+  //   // console.log(req.params.id);
+  //   db.products.update
+  //    (
+  //     { stock_quantity: req.body.stock_quantity },
+  //       { where: { id: req.params.id  } }
+  //    ).then
+  //    (
+  //     function(qtyUpdate) 
+  //      {   
+  //         // console.log('Hello there' , qtyUpdate);
+  //         res.json(qtyUpdate);
+  //      }
+  //    ).catch
+  //   (
+  //    function(error) 
+  //     { 
+  //       // console.log('error side', error); 
+  //       res.json({ error: error });
+  //     }
+  //   );
+  //  });
  };
