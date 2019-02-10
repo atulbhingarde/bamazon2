@@ -16,7 +16,7 @@ you may want to run following command *_ALTER USER 'root'@'localhost' IDENTIFIED
 
 #### The output indicates tests run and sucessful tests and failed tests.
         
-#### ![Alt text](/screenshots/testing_nocodecoverage.png?raw=true "testing results")
+![Alt text](/screenshots/testing_nocodecoverage.png?raw=true "testing results")
 
         *_ npm run nyc-test _*
         
