@@ -6,11 +6,11 @@ you may want to run following command *_ALTER USER 'root'@'localhost' IDENTIFIED
 
 ## latest changes include additional testing *_mocha_* and *_nyc-test_* 
 
-### Testing rig setting as displayed below chnages are done to the package.json.
+### Testing rig setting as displayed below chnages are done to the *_package.json_* .
 
 ![Alt text](/screenshots/testing_rig_setup.png?raw=true "testing rig setup")
 
-### Testing is performed using comamnd line ( after npm install ).
+### Testing is performed using comamnd line ( *_after npm install_* ).
 
         *_ npm run windowstest _*
 
