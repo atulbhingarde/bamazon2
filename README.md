@@ -4,7 +4,7 @@
 
 you may want to run following command *_ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'YourRootPassword';_* as is to ensure proper connectivity etc.
 
-## latest changes include additional testing mocha and nyc-test 
+## latest changes include additional testing *_mocha_* and *_nyc-test_* 
 
 ### Testing rig setting as displayed below chnages are done to the package.json.
 
