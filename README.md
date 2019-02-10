@@ -12,15 +12,15 @@ you may want to run following command *_ALTER USER 'root'@'localhost' IDENTIFIED
 
 ### Testing is performed using comamnd line ( after npm install ).
 
-        _*npm run windowstest*_ 
+        *_npm run windowstest_ *
 
         The output indicates tests run and sucessful tests and failed tests.
         
 ![Alt text](/screenshots/testing_nocodecoverage.png?raw=true "testing results")
 
-        _*npm run nyc-test*_ 
+        *_npm run nyc-test_*
         
-        The output indicates tests run and sucessful tests and failed tests along with the _*code coverage*_, the test provides sufficient information for _*code coverage*_ etc.
+        The output indicates tests run and sucessful tests and failed tests along with the _*code coverage*_, the test provides sufficient information for *_code coverage_* etc.
 
 ![Alt text](/screenshots/testing.png?raw=true "testing results with code coverage")
 
