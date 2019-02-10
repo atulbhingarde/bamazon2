@@ -10,7 +10,7 @@ you may want to run following command *_ALTER USER 'root'@'localhost' IDENTIFIED
 
 ![Alt text](/screenshots/testing_rig_setup.png?raw=true "testing rig setup")
 
-### Testing is performed using comamnd line ( *_after npm install_* ).
+### Testing is performed using comamnd line ( after running *_npm install_* ).
 
         *_ npm run windowstest _*
 
@@ -18,9 +18,10 @@ you may want to run following command *_ALTER USER 'root'@'localhost' IDENTIFIED
         
 ![Alt text](/screenshots/testing_nocodecoverage.png?raw=true "testing results")
 
-        *_npm run nyc-test_*
+        *_ npm run nyc-test _*
         
-        The output indicates tests run and sucessful tests and failed tests along with the _*code coverage*_, the test provides sufficient information for *_code coverage_* etc.
+       The output indicates tests run and sucessful tests and failed tests along with the *_code coverage_* , 
+       the test provides sufficient information for *_code coverage_* etc.
 
 ![Alt text](/screenshots/testing.png?raw=true "testing results with code coverage")
 
