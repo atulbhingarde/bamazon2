@@ -6,7 +6,7 @@ you may want to run following command *_ALTER USER 'root'@'localhost' IDENTIFIED
 
 ## latest changes include additional testing *_mocha_* and *_nyc-test_* 
 
-### Testing rig setting as displayed below chnages are done to the *_package.json_* .
+### Testing rig setup is as displayed below, chnages are done to the *_package.json_* .
 
 ### ![Alt text](/screenshots/testing_rig_setup.png?raw=true "testing rig setup")
 
@@ -18,7 +18,7 @@ you may want to run following command *_ALTER USER 'root'@'localhost' IDENTIFIED
         
 ![Alt text](/screenshots/testing_nocodecoverage.png?raw=true "testing results")
 
-        *_ npm run nyc-test _*
+#### *_npm run nyc-test_*
         
        The output indicates tests run and sucessful tests and failed tests along with the *_code coverage_* , 
        the test provides sufficient information for *_code coverage_* etc.
