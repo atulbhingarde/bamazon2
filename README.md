@@ -16,12 +16,12 @@ you may want to run following command *_ALTER USER 'root'@'localhost' IDENTIFIED
 
 #### The output indicates tests run and sucessful tests and failed tests.
         
-![Alt text](/screenshots/testing_nocodecoverage.png?raw=true "testing results")
+#### ![Alt text](/screenshots/testing_nocodecoverage.png?raw=true "testing results")
 
 #### *_npm run nyc-test_*
         
-       The output indicates tests run and sucessful tests and failed tests along with the *_code coverage_* , 
-       the test provides sufficient information for *_code coverage_* etc.
+#### The output indicates tests run and sucessful tests and failed tests along with the *_code coverage_* , 
+#### the test provides sufficient information for *_code coverage_* etc.
 
 ![Alt text](/screenshots/testing.png?raw=true "testing results with code coverage")
 
