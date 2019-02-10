@@ -12,7 +12,7 @@ you may want to run following command *_ALTER USER 'root'@'localhost' IDENTIFIED
 
 ### Testing is performed using comamnd line ( after running *_npm install_* ).
 
-*_npm run windowstest_*
+        *_npm run windowstest_*
 
         The output indicates tests run and sucessful tests and failed tests.
         
